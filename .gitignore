@@ -1,0 +1,15 @@
+# Archivos temporales
+*.log
+*.tmp
+*.bak
+
+# Configuración local
+*.env
+
+# Carpetas comunes de dependencias
+node_modules/
+vendor/
+
+# Archivos del sistema
+.DS_Store
+Thumbs.db
