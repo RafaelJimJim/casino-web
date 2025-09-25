@@ -1,0 +1,25 @@
+/* Establece el color de fondo principal de la barra de navegación */
+.bg-primary {
+    background-color: #042e53 !important; /* Azul oscuro personalizado */
+}
+
+/* Oculta el ícono desplegable (caret) en los menús tipo dropdown */
+.dropdown-toggle::after {
+    display: none !important;
+}
+
+/* Ajusta el tamaño del logo en la barra de navegación */
+.navbar-brand img {
+    height: 60px;  /* Altura fija del logo */
+    width: auto;   /* Ancho automático para mantener la proporción original */
+}
+
+/* Centra verticalmente los elementos dentro de la barra de navegación */
+.navbar-nav {
+    align-items: center; 
+}
+
+/* Aplica un efecto visual de subrayado al pasar el ratón sobre los enlaces del menú */
+.navbar-nav .nav-link:hover {
+    text-decoration: underline;
+}
