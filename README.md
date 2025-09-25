@@ -43,4 +43,5 @@ La base de datos se encuentra en la carpeta `database/` y contiene los siguiente
 ## ▶️ Cómo ejecutarlo
 1. Copiar el proyecto dentro de la carpeta `htdocs/` de XAMPP.
 2. Iniciar Apache (y MySQL si se usa base de datos).
-3. Abrir en el navegador:
+3. Abrir en el navegador: 3. Abrir en el navegador: `http://localhost/tfg-git/php/index.php`
+
