@@ -1,0 +1,50 @@
+/* Estilos generales del cuerpo de la página */
+body {
+    background-image: linear-gradient(#042e53, #1565aa, #2d8de2); /* Fondo degradado con tonos azules */
+    font-family: "Roboto", sans-serif; /* Fuente general para todo el sitio */
+    color: white; /* Color del texto por defecto */
+}
+
+/* Estilos específicos del pie de página (footer) */
+footer {
+    background-color: #042e53; /* Color de fondo oscuro personalizado */
+    margin-top: 50px; /* Espacio superior del footer */
+}
+
+/* Imágenes dentro del footer */
+footer img {
+    width: 50%; /* Ajusta la imagen al 50% del ancho disponible */
+    height: auto; /* Altura automática para mantener proporciones */
+    padding-bottom: 15px; /* Espacio inferior para separar elementos */
+}
+
+/* Enlaces dentro del footer */
+footer a {
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    font-size: 15px; /* Tamaño uniforme para los enlaces del footer */
+}
+
+/* Cambio de color al pasar el ratón sobre los enlaces del footer */
+footer a:hover {
+    color: yellow !important; /* Color amarillo para indicar interacción */
+}
+
+/* Estilos del texto general del footer */
+footer p {
+    font-size: 15px; /* Tamaño estándar para textos del footer */
+}
+
+/* Personalización específica para iconos del footer (redes sociales) */
+footer a i {
+    font-size: 15px; /* Tamaño estándar de íconos del footer */
+}
+
+/* Clase personalizada para textos amarillos destacados */
+.text-light {
+    color: white !important;
+}
+
+/* Icono del botón responsivo de Bootstrap personalizado */
+.navbar-toggler-icon {
+    filter: invert(100%) !important; /* Invierte el color para mejor visibilidad */
+}
