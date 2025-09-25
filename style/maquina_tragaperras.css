@@ -1,0 +1,143 @@
+/* ✅ RESET GENERAL */
+* {
+    margin: 0; /* Elimina los márgenes predeterminados de todos los elementos */
+    padding: 0; /* Elimina el padding predeterminado */
+    box-sizing: border-box; /* Hace que el tamaño total incluya padding y border */
+    font-family: "Pacifico", sans-serif; /* Define la fuente predeterminada */
+}
+
+/* ✅ CONFIGURACIÓN DEL BODY */
+body {
+    background-color: #f4f4f4; /* Color de fondo gris claro */
+    display: flex; /* Usa flexbox para centrar el contenido */
+    flex-direction: column; /* Organiza los elementos en columna */
+    align-items: center; /* Centra los elementos horizontalmente */
+    justify-content: center; /* Centra los elementos verticalmente */
+    min-height: 100vh; /* Asegura que el contenido cubra toda la pantalla */
+}
+
+/* ✅ HEADER */
+header {
+    position: relative; /* Permite posicionar elementos dentro de él */
+    width: 100%; /* Ocupa todo el ancho disponible */
+    max-width: 600px; /* Define un ancho máximo para mantener la estructura */
+    text-align: center; /* Centra el texto */
+    margin-bottom: 20px; /* Espaciado inferior */
+}
+
+/* ✅ LOGO */
+#logo-container {
+    position: absolute; /* Posicionamiento absoluto dentro del header */
+    top: 10px; /* Distancia desde la parte superior */
+    left: 10px; /* Distancia desde la parte izquierda */
+    z-index: 1000; /* Asegura que el logo esté por encima de otros elementos */
+}
+
+#logo {
+    width: 80px; /* Ajusta el tamaño del logo */
+    height: auto; /* Mantiene la proporción */
+    max-width: 100%; /* Evita que el logo se expanda más allá de su contenedor */
+}
+
+/* ✅ LÍNEA DE CRÉDITO */
+#linea1 {
+    display: flex; /* Usa flexbox para organizar elementos en línea */
+    align-items: center; /* Alinea los elementos verticalmente */
+    justify-content: space-between; /* Distribuye los elementos uniformemente */
+    width: 100%; /* Ocupa todo el ancho disponible */
+    max-width: 400px; /* Máximo ancho */
+    margin: 10px auto; /* Espaciado externo automático para centrar */
+    background: #1e1e1e; /* Fondo oscuro */
+    padding: 10px; /* Espaciado interno */
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+/* ✅ TEXTO DE CRÉDITO Y DINERO */
+#credito {
+    color: orange; /* Color naranja para destacar */
+    font-size: 1.5em; /* Tamaño de fuente más grande */
+}
+
+#dinero {
+    font-size: 2em; /* Tamaño de fuente grande para destacar saldo */
+    font-weight: bold; /* Negrita */
+    color: white; /* Color del texto en blanco */
+}
+
+#euro {
+    font-size: 1.4em; /* Tamaño del símbolo de euro */
+    color: white; /* Color blanco */
+}
+
+/* ✅ BOTÓN "TIRAR" */
+#tirar {
+    width: 180px; /* Ancho del botón */
+    height: 180px; /* Alto del botón */
+    background-color: #fff0c9; /* Color de fondo amarillo claro */
+    border-radius: 50%; /* Botón circular */
+    border: 6px solid crimson; /* Borde rojo */
+    display: flex; /* Centra el contenido dentro del botón */
+    justify-content: center;
+    align-items: center;
+    font-size: 2em; /* Tamaño del texto */
+    font-weight: bold; /* Negrita */
+    box-shadow: 0 0 13px black inset; /* Sombra interna */
+    user-select: none; /* Evita que el texto sea seleccionado */
+    cursor: pointer; /* Cambia el cursor a mano */
+    margin: 20px auto; /* Espaciado alrededor del botón */
+}
+
+/* Efecto al pasar el mouse sobre el botón */
+#tirar:hover {
+    background-color: white; /* Fondo cambia a blanco */
+    box-shadow: 0 0 13px crimson inset; /* Sombra roja */
+}
+
+/* ✅ VENTANAS DONDE APARECEN LOS ICONOS */
+#ventanas {
+    display: flex; /* Usa flexbox */
+    justify-content: center; /* Centra los elementos horizontalmente */
+    gap: 15px; /* Espaciado entre los elementos */
+    width: 100%;
+    max-width: 600px; /* Ancho máximo */
+}
+
+/* Cada ventana individual */
+.ventana {
+    width: 175px; /* Ancho de cada ventana */
+    text-align: center; /* Alinea el contenido al centro */
+}
+
+/* ✅ CONTENEDOR DE IMÁGENES DE LOS RESULTADOS */
+.imagen {
+    border: 4px solid crimson; /* Borde rojo */
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 10px; /* Espaciado interno */
+    background: white; /* Fondo blanco */
+    display: flex; /* Centra la imagen */
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Evita que la imagen se desborde */
+    width: 100%;
+    height: 120px; /* Altura fija */
+}
+
+/* Estilos para la imagen dentro de cada ventana */
+.imagen img {
+    width: 100%; /* La imagen ocupa todo el ancho disponible */
+    height: 100%; /* La imagen ocupa toda la altura disponible */
+    object-fit: contain; /* Ajusta la imagen sin deformarla */
+}
+
+/* ✅ MENSAJE EMERGENTE */
+#velo {
+    position: fixed; /* Se mantiene fijo en la pantalla */
+    background-color: rgba(255, 255, 255, 0.6); /* Fondo semitransparente */
+    top: 0;
+    left: 0;
+    height: 100%; /* Ocupa toda la pantalla */
+    width: 100%; /* Ocupa todo el ancho */
+    display: none; /* Oculto por defecto */
+    align-items: center; /* Centra verticalmente */
+    justify-content: center; /* Centra horizontalmente */
+}
