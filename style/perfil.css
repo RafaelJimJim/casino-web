@@ -1,0 +1,168 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #121212;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Contenedor del perfil */
+.perfil-container {
+    width: 90%;
+    max-width: 800px;
+    background: #1c1c1c;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(255, 223, 0, 0.2);
+    text-align: center;
+}
+
+/* Imagen de perfil */
+.perfil-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 3px solid #FFD700;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+/* Nombre de usuario */
+.perfil-nombre {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Saldo actual */
+.perfil-saldo {
+    font-size: 18px;
+    background: #333;
+    padding: 10px;
+    border-radius: 5px;
+    display: inline-block;
+    color: #FFD700;
+    margin-bottom: 15px;
+}
+
+/* Contenedor de jugadas */
+.jugadas-container {
+    width: 100%;
+    margin-top: 15px;
+    max-height: 400px;
+    overflow-y: auto;
+    border-radius: 5px;
+    background: #222;
+    padding: 10px;
+}
+
+/* Estilo de cada jugada */
+.jugada {
+    background: #2a2a2a;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 4px 8px rgba(255, 223, 0, 0.1);
+}
+
+.jugada span {
+    font-size: 16px;
+    color: #FFD700;
+}
+
+/* Tabla del historial */
+table {
+    width: 100%;
+    margin-top: 15px;
+    border-collapse: collapse;
+    background: #222;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #333;
+}
+
+th {
+    background: #333;
+    color: #FFD700;
+}
+
+/* Paginación */
+#paginacion {
+    margin-top: 15px;
+}
+
+.btn {
+    background-color: #FFD700;
+    color: black;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #e6c300;
+}
+
+.btn:disabled {
+    background-color: #555;
+    cursor: not-allowed;
+}
+
+/* Botón de cerrar sesión */
+.btn-cerrar {
+    display: block;
+    width: 100%;
+    text-align: center;
+    background: crimson;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 20px;
+    transition: 0.3s;
+}
+
+.btn-cerrar:hover {
+    background: darkred;
+}
+
+.boton-volver {
+    margin-top: 30px;
+    display: inline-block;
+    background-color: #FFD700 !important; /* Color dorado */
+    color: #121212 !important; /* Texto en color oscuro */
+    padding: 10px 20px !important;
+    border-radius: 5px !important;
+    font-size: 16px !important;
+    font-weight: bold !important;
+    text-decoration: none !important;
+    transition: background-color 0.3s, transform 0.2s !important;
+}
+
+.boton-volver:hover {
+    background-color: #FFC107 !important; /* Color más intenso al pasar el mouse */
+    transform: scale(1.05) !important;
+}
+
