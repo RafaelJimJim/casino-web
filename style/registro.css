@@ -1,0 +1,31 @@
+body{
+    background-color: rgba(23, 7, 161, 0.87);
+    display: grid;
+    place-items: center;
+    font-family: "Roboto", sans-serif !important;
+    font-style: normal;
+    color: black !important;
+}
+
+#logo img{
+    width: 150px;
+    height: auto;
+}
+
+#container{
+    background-color: aliceblue !important;
+}
+
+#container img{
+    height: 500px;
+    width: auto;
+}
+
+.form-control.invalid {
+    border: 2px solid red !important;
+}
+
+
+
+
+
